@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise! 🎀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hk-pink: #FFB7C5;
+            --hk-light-pink: #FFE5EC;
+            --hk-dark-pink: #FB6F92;
+            --hk-white: #FFFFFF;
+        }
+        body {
+            background-color: var(--hk-light-pink);
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: var(--hk-white);
+            border: 8px solid var(--hk-pink);
+            border-radius: 20px;
+            padding: 40px 20px;
+            width: 360px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .bow {
+            width: 80px;
+            animation: bounce 2s infinite ease-in-out;
+        }
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--hk-dark-pink);
+            margin: 20px 0;
+            font-size: 1.8rem;
+        }
+        p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: var(--hk-dark-pink);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(251, 111, 146, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hello Kitty Bow SVG -->
+        <svg class="bow" viewBox="0 0 100 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45 37.5C20 15 10 30 15 50C20 70 40 60 45 37.5Z" fill="#FB6F92" stroke="black" stroke-width="4"/>
+            <path d="M55 37.5C80 15 90 30 85 50C80 70 60 60 55 37.5Z" fill="#FB6F92" stroke="black" stroke-width="4"/>
+            <circle cx="50" cy="37.5" r="12" fill="#FB6F92" stroke="black" stroke-width="4"/>
+        </svg>
+        <h1>Happy Birthday! 💕</h1>
+        <p>Hello Kitty needs your help preparing a special birthday surprise. Are you ready to help her bake a cake?</p>
+        <a href="cake.html" class="btn">Let's Go! 🎀</a>
+    </div>
+</body>
+</html>
